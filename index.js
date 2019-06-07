@@ -41,6 +41,7 @@ async function main () {
       const cfPutReqData = {
         'type': cfDnsRecord.type,
         'name': cfDnsRecord.name,
+        'proxied': cfDnsRecord.proxied,
         'content': content
       }
       return axios.put(cfPutReqUrl, cfPutReqData, { headers: cfAuthHeaders })
